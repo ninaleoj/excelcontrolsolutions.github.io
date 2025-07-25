@@ -2,167 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO Meta Tags -->
-  <title>Control Lab Instruments & Arduino with Excel | WinSock API Guide</title>
-  <meta name="description" content="Use Excel and Windows Socket API to control SCPI lab instruments and Arduino. Download this complete PDF guide and Workbook bundle — no LabVIEW required.">
-  <meta name="keywords" content="Excel SCPI, Excel Winsock, Arduino control, LabVIEW alternative, Excel VBA, SCPI command, instrument automation, Excel Arduino, Winsock API, test automation Excel">
-  <meta name="author" content="Joel Anin">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Control Instruments with Excel — Winsock API + Arduino Guide">
-  <meta property="og:description" content="Learn to use Excel and Windows Socket API to automate SCPI instruments and Arduino. Includes PDF guide, Codes and Libraries.">
-  <meta property="og:image" content="https://yourdomain.com/images/excel-winsock-cover.jpg">
-  <meta property="og:url" content="https://yourdomain.com/excel-scpi-guide">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Excel SCPI + Arduino Guide">
-  <meta name="twitter:description" content="Control instruments from Excel using Winsock API. PDF guide, Workbook, and Arduino code and library included.">
-  <meta name="twitter:image" content="https://yourdomain.com/images/excel-winsock-cover.jpg">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Control Arduino and SCPI instruments using Excel VBA over TCP LAN using Windows Sockets API (WSA). No serial ports, no mswinsck.ocx. Pure network-based automation." />
+  <title>ExcelControlSolutions | TCP/IP Arduino & SCPI with Excel VBA</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-    main {
+      background-color: #121212;
+      color: #e0e0e0;
+      padding: 2rem;
       max-width: 800px;
       margin: auto;
-      padding: 2rem 1rem;
-      background: white;
+      line-height: 1.7;
+    }
+    h1 {
+      color: #90caf9;
     }
     h2 {
-      color: #2c3e50;
+      color: #fbc02d;
       margin-top: 2rem;
+    }
+    a {
+      color: #64b5f6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     ul {
       padding-left: 1.5rem;
     }
     .cta {
-      background: #27ae60;
+      background-color: #1e88e5;
       color: white;
-      text-align: center;
-      padding: 2rem 1.5rem;
-      margin-top: 3rem;
+      padding: 1rem;
       border-radius: 10px;
-    }
-    .cta h3 {
-      margin-top: 0;
-    }
-    .cta a {
       display: inline-block;
-      background: white;
-      color: #27ae60;
-      padding: 0.75rem 1.5rem;
-      font-size: 1.1rem;
-      text-decoration: none;
-      border-radius: 5px;
+      margin: 2rem 0;
+      text-align: center;
       font-weight: bold;
-      transition: 0.3s ease;
-      margin-top: 1rem;
     }
-    .cta a:hover {
-      background: #f1f1f1;
+    .code {
+      background-color: #263238;
+      padding: 0.6rem;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #c3e88d;
+      display: inline-block;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-	a.button {
-      text-decoration: none;
-      padding: 15px 30px;
-      background-color: #28a745;
-      color: white;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-    a.button:hover {
-      background-color: #218838;
+      margin-top: 3rem;
+      font-size: 0.85em;
+      color: #888;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Control Lab Instruments & Arduino from Excel</h1>
-  <p>Skip OEM Proprietary Software. Use Excel with WinSock API for SCPI commands & hardware control.</p>
-</header>
+  <h1>Excel-Controlled Arduino & SCPI over TCP/IP (No USB)</h1>
+  <p>
+    Welcome to <strong>ExcelControlSolutions</strong> — your home for automation with <strong>Excel VBA and TCP/IP</strong>. This unique toolkit empowers you to control <strong>Arduino devices</strong> and <strong>SCPI instruments</strong> directly over your LAN using the native <span class="code">Windows Sockets API (WSA)</span> — no serial ports, no ActiveX controls.
+  </p>
 
-<main>
-  <section>
-    <h2>📘 What You'll Learn</h2>
-    <ul>
-      <li>How to set up Excel VBA with Winsock for TCP/IP communication</li>
-      <li>Send SCPI commands to lab instruments like oscilloscopes, PSUs, Analyzers</li>
-      <li>Control Arduino devices via Ethernet LAN from Excel</li>
-      <li>Automate real-world test procedures and log measurements</li>
-    </ul>
-  </section>
+  <h2>🌐 Key Features</h2>
+  <ul>
+    <li>🧠 Native WSA TCP client built in pure Excel VBA</li>
+    <li>🔌 Control <strong>Arduino with W5100/W5500</strong> over Ethernet</li>
+    <li>📟 Send SCPI commands to lab instruments via LAN</li>
+    <li>📈 Real-time data logging and automated triggers</li>
+    <li>🛠 No need for <span class="code">mswinsck.ocx</span> or serial drivers</li>
+  </ul>
 
-  <section>
-    <h2>📦 What's Included</h2>
-    <ul>
-      <li>✅ PDF Guide (20+ pages, step-by-step instructions)</li>
-      <li>✅ Excel VBA Workbook (.xlsm file)</li>
-      <li>✅ SCPI Examples (HIOKI IM3570)</li>
-      <li>✅ Arduino Sketch and SCPI-command library for TCP interface</li>
-      <li>✅ Option: HIOKI IM3570 Test Automation Workbook</li>
-    </ul>
-  </section>
+  <h2>📦 What's Included</h2>
+  <ul>
+    <li>Excel workbook with complete WSA TCP module</li>
+    <li>Arduino SCPI command Library for TCP server communication</li>
+    <li>SCPI command templates for Ethernet instruments</li>
+    <li>Excel Workbook with complete logger and event macros for HIOKI IM3570</li>
+    <li>Step-by-step PDF setup guide</li>
+  </ul>
 
-  <section>
-    <h2>🎯 Who Should Use This?</h2>
-    <ul>
-      <li>🔧 Electronics/Test Engineers wanting a LabVIEW alternative</li>
-      <li>🎓 STEM instructors building low-cost test setups</li>
-      <li>🔬 Hobbyists & makers exploring automation with Excel</li>
-    </ul>
-  </section>
+  <h2>🖥 Requirements</h2>
+  <ul>
+    <li>Windows PC with Excel 2013 or newer</li>
+    <li>Internet or LAN-enabled instruments/boards</li>
+    <li>Arduino with Ethernet (W5100/W5500) or SCPI device</li>
+    <li>Basic understanding of Excel macros (VBA)</li>
+  </ul>
 
-  <section>
-    <h2>🚫 No Extra Software Needed</h2>
-    <ul>
-      <li>❌ No LabVIEW or MATLAB</li>
-      <li>❌ No proprietary drivers</li>
-      <li>✅ 100% built on Excel, VBA, and Arduino</li>
-	  <li>✅ Configurable to interface with multiple instruments</li>
-    </ul>
-  </section>
-	<main>
-		<p>Explore our digital tools for Arduino automation, SCPI commands, and Excel integration.</p>
-		<a class="button" href="https://excelcontrolsolutions.sellfy.store" target="_blank">
-			Visit Our Sellfy Store
-		</a>
-	</main>
-</main>
+  <h2>🔗 Quick Links</h2>
+  <ul>
+    <li><a href="https://excelcontrolsolutions.sellfy.store" target="_blank">🛒 Sellfy Store</a></li>
+    <li><a href="https://github.com/ninaleoj/excelcontrolsolutions.github.io/" target="_blank">📁 GitHub Repository</a></li>
+    <li><a href="https://ninaleoj.github.io" target="_blank">🌐 GitHub Landing Page</a></li>
+  </ul>
 
-<footer>
-  &copy; 2025 Joel Anin | excelcontrolsolutions
-</footer>
+  <a class="cta" href="https://excelcontrolsolutions.sellfy.store" target="_blank">🚀 Download the Excel TCP Toolkit Now</a>
+
+  <h2>📌 Use Case Examples</h2>
+  <ul>
+    <li>Automate SCPI test instruments from Excel spreadsheets</li>
+    <li>Send TCP/IP commands to Arduino boards over LAN</li>
+    <li>Collect and chart live data directly in Excel</li>
+    <li>Replace LabVIEW or Python setups with native Excel VBA</li>
+  </ul>
+
+
+  <footer>
+    &copy; 2025 ExcelControlSolutions by Joel Anin. Built with VBA, TCP/IP, and curiosity.
+  </footer>
 
 </body>
 </html>
